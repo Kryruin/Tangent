@@ -123,7 +123,6 @@ if __name__ == "__main__":
     tangent.SetSignalConnection(sEmitter)
     print("Application Main Window: " + threading.current_thread().name)
     print(threading.get_ident())
-    # ApplicationSingleton.getInstance().InitialSetup()
     keyboard.add_hotkey('alt+q', sEmitter.doEmit)
     keyboard.add_hotkey('alt+w', sEmitter.doCloseEmit)
     sys.exit(tangent.app.exec())
