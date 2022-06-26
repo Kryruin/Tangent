@@ -11,36 +11,8 @@ import pyautogui ,keyboard
 from PyQt5.QtWidgets import QMainWindow
 
 import threading
-# from pywinauto.controls.hwndwrapper import HwndWrapper
-# from ctypes import LibraryLoader,WinDLL
-# https://gitpress.io/u/1155/pyqt-example-MinimizeToTray
-# https://stackoverflow.com/questions/12781059/how-to-know-if-the-keyboard-is-active-on-a-text-input/13448409#13448409
-# https://stackoverflow.com/questions/59884688/getguithreadinfo-with-pywin32
-# https://github.com/boppreh/keyboard
-# https://stackoverflow.com/questions/12781059/how-to-know-if-the
-# -keyboard-is-active-on-a-text-input/13448409#13448409
-# https://pywinauto.readthedocs.io/en/latest/getting_started.html
-#https://www.youtube.com/watch?v=lTJ-QkC_Sxw&ab_channel=KDAB
-#https://stackoverflow.com/questions/49331513/calling-a-method-from-inside-a-thread-to-another-class-in-python-pyqt
 clickOffset = (15,0)
-# GetWindowThreadProcessId.restype = wintypes.DWORD
-# windll = LibraryLoader(WinDLL)
-# GetWindowThreadProcessId.argtypes = [
-#     wintypes.HWND,
-#     POINTER(wintypes.DWORD),
-# ]
-# def HasKeyboardFocus():
-#     windll.user32.GetWindowThreadProcessId()
-#     control_thread = windll.user32.GetWindowThreadProcessId(self.handle, None)
-#     win32process.AttachThreadInput(control_thread, win32api.GetCurrentThreadId(), 1)
-#     focused = win32gui.GetFocus()
-#     win32process.AttachThreadInput(control_thread, win32api.GetCurrentThreadId(), 0)
 
-#     win32functions.WaitGuiThreadIdle(handle)
-
-#     return self.handle == focused
-# print("Application Main Window: " + threading.current_thread().name)
-# print(threading.get_ident())
 
 
 
