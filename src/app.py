@@ -45,7 +45,6 @@ class Tangent():
         return positionOffset  
     def SetSignalConnection(self, obj):
         obj.sig.connect(self.ShowWindow)
-        obj.closeSig.connect(self.window.close)
     def ShowWindow(self):
         if not self.isShowing:
             # keyboard_focused = HwndWrapper(win32gui.GetForegroundWindow()).has_keyboard_focus()
@@ -84,8 +83,7 @@ class SignalEmitter(QObject):
     closeSig = pyqtSignal()
     def doEmit(self):
         self.sig.emit()
-    def doCloseEmit(self):
-        self.closeSig.emit()
+
 
 
 # https://stackoverflow.com/questions/30676599/emitting-signals-from-a-python-thread-using-qobject
@@ -96,5 +94,4 @@ if __name__ == "__main__":
     print("Application Main Window: " + threading.current_thread().name)
     print(threading.get_ident())
     keyboard.add_hotkey('alt+q', sEmitter.doEmit)
-    keyboard.add_hotkey('alt+w', sEmitter.doCloseEmit)
     sys.exit(tangent.app.exec())
