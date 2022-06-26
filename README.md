@@ -24,4 +24,9 @@ Steps to use
 
 Current Limitations:
 1) Users have to ensure that the mouse cursor is hovering over the text box when pressing the hotkey "alt+q"
+2) Only image files like jpg and pngs are usable in the tool. Gifs and videos are not supported yet
+
+
+
+
 
